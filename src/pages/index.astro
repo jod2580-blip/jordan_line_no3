@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>블로그에 오신 것을 환영합니다</h1>
+			<p>
+				이 페이지는 Astro 정적 블로그 템플릿으로, 마크다운 글을 빠르게 작성하고 Vercel에 배포할 수 있게
+				만들었습니다.
+			</p>
+			<p>
+				글은 `src/content/blog/` 폴더 안의 `*.md`, `*.mdx` 파일로 관리합니다.
+				새 글을 추가한 뒤 빌드하면 자동으로 블로그 목록과 상세 페이지가 생성됩니다.
+			</p>
+			<p>원하시면, 테마(레이아웃)나 글 목록 디자인도 바로 커스터마이징할 수 있어요.</p>
+		</main>
+		<Footer />
+	</body>
+</html>

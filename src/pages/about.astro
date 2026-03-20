@@ -1,0 +1,21 @@
+---
+import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="소개"
+	description="안녕하세요. 이 블로그는 마크다운으로 글을 작성해 공개하는 개인 블로그입니다."
+	pubDate={new Date('August 08 2021')}
+	heroImage={AboutHeroImage}
+>
+	<p>
+		안녕하세요. 이 블로그는 제가 배운 점과 작업하면서 정리한 내용을 마크다운으로 기록하는 공간입니다.
+		짧게 읽히는 글부터, 차근차근 설명하는 글까지 다양하게 올릴 예정이에요.
+	</p>
+
+	<p>
+		원하시는 방식으로 꾸미기 위해 테마/레이아웃은 `src/components/`와 `src/layouts/`에서 바로 수정할 수 있습니다.
+		글은 `src/content/blog/`에 추가해 두면 자동으로 게시됩니다.
+	</p>
+</Layout>
